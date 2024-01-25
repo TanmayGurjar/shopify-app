@@ -1,8 +1,8 @@
-<!-- generate_token.php -->
+<!-- pages=>generate_token.php -->
 <?php
 
 // Get our helper functions
-require_once("inc/functions.php");
+require_once '../inc/functions.php';
 
 // Set variables for our request
 $api_key = "61e1e1e6ffd942e3b3a66c9f85bf6684";
@@ -43,6 +43,7 @@ if (hash_equals($hmac, $computed_hmac)) {
 
 	// Show the access token (don't do this in production!)
 	echo $access_token;
+	exit;
 } else {
 	// Someone is trying to be shady!
 	die('This request is NOT from Shopify!');
