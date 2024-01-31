@@ -1,4 +1,4 @@
-<!-- inc=>functions.php -->
+<!-- inc/functions.php -->
 <?php
 
 function shopify_call($token, $shop, $api_endpoint, $query = array(), $method = 'GET', $request_headers = array())
